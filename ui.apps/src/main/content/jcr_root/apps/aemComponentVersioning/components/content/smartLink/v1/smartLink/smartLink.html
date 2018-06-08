@@ -1,0 +1,16 @@
+<sly data-sly-use.version="aemComponentVersioning.core.models.Versioning"></sly>
+
+<div data-sly-use.mode="aemComponentVersioning.core.models.Mode"
+     data-sly-test="${(wcmmode.edit || wcmmode.design) && mode.touchUI}"
+     class="author-touch-ui">Smart Link - V1</div>
+
+<sly data-sly-use.link="aemComponentVersioning.core.models.SmartLink">
+
+    <sly data-sly-test="${(wcmmode.edit || wcmmode.design) && (!properties.linkLabel)}">
+        Setup Smart Link
+    </sly>
+
+    <h5>
+        <a href="${link.linkUrl}" target="${properties.openLink}">${properties.linkLabel}</a>
+    </h5>
+</sly>

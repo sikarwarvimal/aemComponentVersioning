@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Smart Link - V3"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1 jcr:primaryType="nt:unstructured"
+                    jcr:title="General"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <linkLabel
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Link Label"
+                                    name="./linkLabel"/>
+                            <linkUrl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                    fieldLabel="Link URL"
+                                    name="./linkUrl"/>
+                            <openLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Opens In"
+                                    name="./openLink">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <option_1 jcr:primaryType="nt:unstructured" text="Current Window" value="_self"/>
+                                    <option_2 jcr:primaryType="nt:unstructured" text="Parent Window" value="_parent"/>
+                                    <option_3 jcr:primaryType="nt:unstructured" text="New Window" value="_blank"/>
+                                </items>
+                            </openLink>
+
+                            <hideOnDesktop
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                text="Hide On Desktop"
+                                name="./hideOnDesktop"
+                                value="true"/>
+
+                            <hideOnMobile
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                text="Hide On Mobile"
+                                name="./hideOnMobile"
+                                value="true"/>
+                        </items>
+                    </column>
+                </items>
+            </tab1>
+
+            <tab2 jcr:primaryType="nt:unstructured"
+                    jcr:title="Button"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <isButton
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Button"
+                                    fieldDescription="If checked, Link will be displayed as Button."
+                                    name="./isButton"
+                                    value="true"/>
+                            <buttonSize
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Button Size"
+                                    name="./buttonSize">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <option_1 jcr:primaryType="nt:unstructured" text="Default" value=""/>
+                                    <option_2 jcr:primaryType="nt:unstructured" text="Extra Small" value="btn-xs"/>
+                                    <option_3 jcr:primaryType="nt:unstructured" text="Small" value="btn-sm"/>
+                                    <option_4 jcr:primaryType="nt:unstructured" text="Large" value="btn-lg"/>
+                                </items>
+                            </buttonSize>
+                        </items>
+                    </column>
+                </items>
+            </tab2>
+
+            <versions jcr:primaryType="nt:unstructured"
+                      jcr:title="Versions"
+                      sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <alignment
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/include"
+                                    path="/apps/aemComponentVersioning/components/content/smartLink/reference/dialog/touchui/dialog_parts/versioning"/>
+                        </items>
+                    </column>
+                </items>
+            </versions>
+        </items>
+    </content>
+</jcr:root>

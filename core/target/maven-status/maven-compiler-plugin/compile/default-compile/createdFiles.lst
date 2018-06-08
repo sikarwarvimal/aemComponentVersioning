@@ -1,0 +1,8 @@
+aemComponentVersioning/core/filters/LoggingFilter.class
+aemComponentVersioning/core/models/SmartLink.class
+aemComponentVersioning/core/listeners/SimpleResourceListener.class
+aemComponentVersioning/core/schedulers/SimpleScheduledTask.class
+aemComponentVersioning/core/servlets/SimpleServlet.class
+aemComponentVersioning/core/models/Versioning.class
+aemComponentVersioning/core/package-info.class
+aemComponentVersioning/core/models/Mode.class

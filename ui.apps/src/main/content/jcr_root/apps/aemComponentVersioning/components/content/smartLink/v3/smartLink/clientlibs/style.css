@@ -1,0 +1,25 @@
+ .btn {
+   display: inline-block;
+   background-color: #aaa;
+   border: 0;
+   color: #fff;
+   font-size: 16px;
+   padding: 10px 16px;
+   transition: all .2s ease-in-out;
+   text-decoration: none;
+ }
+
+.btn-xs {
+  font-size: 8px;
+  padding: 8px 10px;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 9px 12px;
+}
+
+.btn-lg {
+  font-size: 22px;
+  padding: 12px 22px;
+}

@@ -1,0 +1,22 @@
+/* Show & Hide */
+@media (max-width: 40em) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  /* Toggle on small devices **/
+  .mobile-active  {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: none;
+  }
+
+  /* Toggle on desktop **/
+  .desktop-active {
+    display: block;
+  }
+}
