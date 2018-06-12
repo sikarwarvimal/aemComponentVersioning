@@ -1,0 +1,7 @@
+<div data-sly-use.authoringMode="com.aegis.aem.core.models.AuthoringMode"
+     data-sly-test="${(wcmmode.edit || wcmmode.design) && authoringMode.touchUI}"
+     class="author-touch-ui">Change Version</div>
+
+<div class="text" data-sly-use.changeVersion="aemComponentVersioning.core.ChangeVersion">
+    ${changeVersion.pageList}
+</div>

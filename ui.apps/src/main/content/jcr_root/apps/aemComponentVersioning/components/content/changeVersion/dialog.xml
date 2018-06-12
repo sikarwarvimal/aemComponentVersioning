@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Change Version"
+          xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <info
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Info"
+                fieldDescription="Title component is only Authorable in Touch UI mode."
+                name="./info"
+                xtype="displayfield"/>
+    </items>
+</jcr:root>
