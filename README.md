@@ -1,6 +1,6 @@
-# Dynamic AEM Component Versioning
+# Dynamic Versioning of AEM Components
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+Checkout `Dynamic Versioning of AEM Components article` for more details: https://www.linkedin.com/pulse/dynamic-versioning-aem-components-vimal-kumar/
 
 ## Modules
 
